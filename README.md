@@ -39,6 +39,23 @@ A simple, low-cost touch-controlled Stream Deck–style macro pad built with Cir
 1. Copy `code.py` (the main script) to the root of your CIRCUITPY drive.
 2. Copy all required library folders from the Adafruit CircuitPython Bundle (displayio, touchscreen, HID) into `lib/` on the CIRCUITPY drive.
 
+## Web Flasher
+
+You can flash the CYD board directly from your browser using the files in
+`web-flasher/`. Because WebUSB and the File System Access API both require a
+secure context, you must open `index.html` from an HTTPS origin or `localhost`.
+
+1. Start a simple server in this repository (for example
+   `python -m http.server`).
+2. Navigate to `https://localhost:8000/web-flasher/` (adjust the port if
+   needed).
+3. Click **Connect** and choose the board's serial port.
+4. Click **Flash Firmware** to upload the provided CircuitPython firmware
+   (`firmware.uf2` or `firmware.bin`).
+5. Once the board resets and the `CIRCUITPY` drive appears, click **Copy
+   Libraries** and select that drive. `main.py` and library folders will be
+   copied automatically.
+
 ## Usage
 
 1. Plug the board into your computer via USB.
