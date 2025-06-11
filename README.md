@@ -8,7 +8,7 @@ A simple, low-cost touch-controlled Stream Deck–style macro pad built with Cir
 * Configurable grid of touch buttons
 * Customizable key combinations for each button
 * Visual feedback on button press
-* Simple one-file `code.py` design
+* Simple one-file `main.py` design
 
 ## Hardware Requirements
 
@@ -36,14 +36,14 @@ A simple, low-cost touch-controlled Stream Deck–style macro pad built with Cir
 
 ## Installation
 
-1. Copy `code.py` (the main script) to the root of your CIRCUITPY drive.
+1. Copy `main.py` (the main script) to the root of your CIRCUITPY drive.
 2. Copy all required library folders from the Adafruit CircuitPython Bundle (displayio, touchscreen, HID) into `lib/` on the CIRCUITPY drive.
 
 ## Usage
 
 1. Plug the board into your computer via USB.
 2. In a text editor or application, tap buttons on the touchscreen to send corresponding key combinations.
-3. Adjust `button_mappings` in `code.py` to change labels and keycodes.
+3. Adjust `button_mappings` in `main.py` to change labels and keycodes.
 
 ## Configuration
 
