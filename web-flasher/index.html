@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CYD Web Flasher</title>
+  <script src="https://unpkg.com/@esphome/esptool-web@latest/dist/web/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+</head>
+<body>
+  <h1>CYD Stream Deck Web Flasher</h1>
+  <button id="connect">Connect</button>
+  <button id="flash" disabled>Flash Firmware</button>
+  <button id="copy" disabled>Copy Libraries</button>
+
+  <pre id="log"></pre>
+
+  <script src="flash.js"></script>
+</body>
+</html>
